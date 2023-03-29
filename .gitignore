@@ -1,0 +1,5 @@
+node_modules
+dist
+deployed_apps
+.vscode
+yarn-error.log

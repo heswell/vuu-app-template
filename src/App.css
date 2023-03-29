@@ -1,0 +1,11 @@
+.vuuApp {
+    padding: 10px;
+}
+
+.vuuTable {
+    border: solid 1px var(--salt-container-primary-borderColor); 
+}
+
+.vuuAppHeader {
+    height: 46px !important;
+}

@@ -1,0 +1,9 @@
+.vuuBuySell {
+    font-weight: var(--salt-typography-fontWeight-bold);
+}
+.vuuBuySell-buy {
+    color: #427b1fcc;
+}
+.vuuBuySell-sell {
+    color: var(--salt-differential-negative-foreground);
+}

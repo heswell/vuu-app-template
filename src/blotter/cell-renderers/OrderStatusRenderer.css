@@ -1,0 +1,27 @@
+.vuuOrderStatus {
+    font-weight: var(--salt-typography-fontWeight-bold);
+    padding: 1px;
+}
+
+.vuuOrderStatus-progress {
+    --vuu-order-background: #d8dee5;
+}
+.vuuOrderStatus-complete {
+    --vuu-order-background: #e3e2c0;
+}
+.vuuOrderStatus-cancelled {
+    --vuu-order-background: #fadddb;
+}
+.vuuOrderStatus-rejected {
+    --vuu-order-background: red;
+}
+
+
+.vuuOrderStatus-background {
+    background-color: var(--vuu-order-background);
+    border-radius: 10px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
