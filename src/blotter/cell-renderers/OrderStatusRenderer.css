@@ -13,7 +13,7 @@
     --vuu-order-background: #fadddb;
 }
 .vuuOrderStatus-rejected {
-    --vuu-order-background: red;
+    --vuu-order-background: #fadddb;
 }
 
 

@@ -1,27 +1,29 @@
+import { Tab, Tabstrip } from "@heswell/salt-lab";
 import {
   DataSource,
   DataSourceConfig,
   RemoteDataSource,
   SchemaColumn,
 } from "@vuu-ui/vuu-data";
-import { Flexbox } from "@vuu-ui/vuu-layout";
-import { Tab, Tabstrip } from "@heswell/salt-lab";
-import { ColumnDescriptor, GridConfig } from "@vuu-ui/vuu-datagrid-types";
-import { registerComponent, useViewContext } from "@vuu-ui/vuu-layout";
+import { GridConfig } from "@vuu-ui/vuu-datagrid-types";
+import { Flexbox, registerComponent, useViewContext } from "@vuu-ui/vuu-layout";
 import { Table } from "@vuu-ui/vuu-table";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { OrdersSchema } from "./OrdersSchema";
 import "./cell-renderers";
+import { ColumnConfig } from "./ColumnConfig";
+import { OrdersSchema } from "./OrdersSchema";
 
-import "@vuu-ui/vuu-table/index.css";
-import "./Blotter.css";
+import { Filter } from "@vuu-ui/vuu-filter-types";
 import {
   addFilter,
   filterAsQuery,
   FilterInput,
   useFilterSuggestionProvider,
 } from "@vuu-ui/vuu-filters";
-import { Filter } from "@vuu-ui/vuu-filter-types";
+import "@vuu-ui/vuu-filters/index.css";
+import "@vuu-ui/vuu-popups/index.css";
+import "@vuu-ui/vuu-table/index.css";
+import "./Blotter.css";
 
 const classBase = "vuuBlotter";
 
@@ -36,59 +38,10 @@ type FilterState = {
   filterName?: string;
 };
 
-const NO_CONFIG: BlotterConfig = {};
-
-const COLUMN_CONFIG: { [key: string]: Partial<ColumnDescriptor> } = {
-  side: {
-    align: "left",
-    type: {
-      name: "string",
-      renderer: {
-        map: { "1": "Sell", "2": "Buy" },
-        name: "buy-sell",
-      },
-    },
-  },
-  status: {
-    align: "left",
-    label: "State",
-    type: {
-      name: "string",
-      renderer: {
-        map: {
-          "1": "In Progress",
-          "2": "Completed",
-          "3": "Cancelled",
-          "4": "Rejected",
-        },
-        name: "order-status",
-      },
-    },
-  },
-  subSatus: {
-    align: "left",
-    label: "Sub State",
-    type: {
-      name: "string",
-      renderer: {
-        map: {
-          "0": "Tempor",
-          "1": "Elit, sed do",
-          "2": "Ut labore et",
-          "3": "Magna aliqua",
-          "4": "Lorem ipsum",
-          "5": "Consectetur",
-        },
-        name: "mapped-lookup",
-      },
-    },
-  },
-};
-
 const toSchemaColumn = (columnName: string): SchemaColumn => {
   const column = OrdersSchema.columns.find(({ name }) => name === columnName);
   if (column) {
-    const columnConfig = COLUMN_CONFIG[columnName];
+    const columnConfig = ColumnConfig[columnName];
     if (columnConfig) {
       return {
         ...column,
@@ -111,7 +64,7 @@ export const Blotter = () => {
 
   const namedConfigurations = useMemo(() => {
     // prettier-ignore
-    const whpColumns = ["orderId", "status", "subState", "quantity", "side", "account", "algo", "assetClass", "currency", "exchange", "ric", "isin", "instrument"]
+    const whpColumns = ["orderId", "status", "subState", "quantity", "side", "account", "algo", "assetClass", "currency", "exchange", "ric", "isin", "validUntil", "instrument"]
     // prettier-ignore
     const wovColumns = ["account", "orderId", "side", "price", "averagePrice", "quantity", "filledQuantity", "openQuantity", "validUntil"];
     // prettier-ignore
