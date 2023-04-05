@@ -1,4 +1,4 @@
-import { Tab, Tabstrip } from "@heswell/salt-lab";
+import { Tab, Tabstrip, Toolbar } from "@heswell/salt-lab";
 import {
   DataSource,
   DataSourceConfig,
@@ -12,6 +12,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import "./cell-renderers";
 import { ColumnConfig } from "./ColumnConfig";
 import { OrdersSchema } from "./OrdersSchema";
+import { DataSourceStats } from "@vuu-ui/vuu-table-extras";
 
 import { Filter } from "@vuu-ui/vuu-filter-types";
 import {
@@ -22,6 +23,7 @@ import {
 } from "@vuu-ui/vuu-filters";
 import "@vuu-ui/vuu-filters/index.css";
 import "@vuu-ui/vuu-popups/index.css";
+import "@vuu-ui/vuu-table-extras/index.css";
 import "@vuu-ui/vuu-table/index.css";
 import "./Blotter.css";
 
@@ -292,7 +294,7 @@ export const Blotter = () => {
         onAddTab={handleAddTab}
         onCloseTab={onTabDidClose}
       >
-        {tabs.map(({ label, closeable }) => (
+        {tabs.map(({ label }) => (
           <Tab closeable key={label} label={label} />
         ))}
       </Tabstrip>
@@ -310,6 +312,9 @@ export const Blotter = () => {
         rowHeight={21}
         zebraStripes
       />
+      <Toolbar className="vuuBlotter-footer">
+        <DataSourceStats dataSource={dataSource as RemoteDataSource} />
+      </Toolbar>
     </Flexbox>
   );
 };

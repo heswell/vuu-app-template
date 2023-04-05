@@ -503,7 +503,7 @@
   dependencies:
     "@swc/helpers" "^0.4.14"
 
-"@lezer/common@^1.0.0", "@lezer/common@^1.0.2":
+"@lezer/common@1.0.2", "@lezer/common@^1.0.0", "@lezer/common@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@lezer/common/-/common-1.0.2.tgz#8fb9b86bdaa2ece57e7d59e5ffbcb37d71815087"
   integrity sha512-SVgiGtMnMnW3ActR8SXgsDhw7a0w0ChHSYAyAUxxrOiJ1OqYWEKk/xJd84tTSPo1mo6DXLObAJALNnd0Hrv7Ng==
@@ -755,10 +755,10 @@
     picocolors "^1.0.0"
     pretty-format "^27.5.1"
 
-"@vuu-ui/vuu-codemirror@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-codemirror/-/vuu-codemirror-0.6.23-debug.tgz#f19a9d8f7aa926ff3dd3edeccbb4d479a3ddec2b"
-  integrity sha512-aG0OLFctwDtmT0CzVZoPYk+KnYqkfNpVdkOcI4pZHvNXcPJdbVpqycaqMMsCsbIwGBLD3JQpDBpnq4dZ0Hln9Q==
+"@vuu-ui/vuu-codemirror@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-codemirror/-/vuu-codemirror-0.6.24-debug.tgz#156f83caafd4bf970c0c7a94c1c8aa53b7f8d241"
+  integrity sha512-PpquZgp3o/FSZhSkk/Ns9swZ8SfpB47rpm+Jf1FSUlTyLaYZWlXG0c7bp6tBRMxoIjBumq1+A75mfk3ah5yKuw==
   dependencies:
     "@codemirror/autocomplete" "6.4.2"
     "@codemirror/commands" "6.2.1"
@@ -769,96 +769,111 @@
     "@lezer/highlight" "1.1.3"
     "@lezer/lr" "1.3.3"
 
-"@vuu-ui/vuu-data@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-data/-/vuu-data-0.6.23-debug.tgz#aa890f61f2d65f0cc504ef6e40adc27bec2c80bb"
-  integrity sha512-GyTnVneDYM+2rs/DhLjPRUiOs3dkXgllg2LSAPttPoab7lIwLhX7/10+qPmiHyK/xW0jaDy26HVCJXDl5jqI+g==
+"@vuu-ui/vuu-data@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-data/-/vuu-data-0.6.24-debug.tgz#24df5b38cd0e814bef21eff21779507184100c4e"
+  integrity sha512-3CNFhbRflyJeomWotSoFW1duQe/bqdekou/90SQnha86vYD+4H785NVqHVSX2WpWCBYmlqsy2MORmc5F6v5ijA==
   dependencies:
-    "@vuu-ui/vuu-filters" "0.6.23-debug"
-    "@vuu-ui/vuu-popups" "0.6.23-debug"
-    "@vuu-ui/vuu-utils" "0.6.23-debug"
+    "@vuu-ui/vuu-filters" "0.6.24-debug"
+    "@vuu-ui/vuu-popups" "0.6.24-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
 
-"@vuu-ui/vuu-datagrid-types@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-datagrid-types/-/vuu-datagrid-types-0.6.23-debug.tgz#ae85dc30f23a30a15beeb67d62c12c3af731b2b0"
-  integrity sha512-5tMvOPQdDMnEMUUBDGrWGM5fbdBQoNVo+YNLfHJjbICRvq6cOLEs1+HdyeVd7vTjDN6ZhOcDht4Y6GQ7FX3ZQg==
+"@vuu-ui/vuu-datagrid-types@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-datagrid-types/-/vuu-datagrid-types-0.6.24-debug.tgz#3ee0f0da0bf851b0a30d1a80aa95de74662a0462"
+  integrity sha512-rW0P4waFVVDViFqvkzCYk+pz18F/ALfxot9cSDu3rCZ5RvM0RUYO83KRgrBzvm3b/kJPciDXc9YF4dSYrlnjMg==
 
-"@vuu-ui/vuu-filter-types@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-filter-types/-/vuu-filter-types-0.6.23-debug.tgz#f240f1d1cc9d022485299df3984a6a4178105850"
-  integrity sha512-Ezczow/8Gy3EgLZrWs57VcRkagZboCp5O6RJZCfFbhP0JiNdNc6gUFjJQcliysXPjyefWDPK+yk3kV0SjKf1FA==
+"@vuu-ui/vuu-filter-types@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-filter-types/-/vuu-filter-types-0.6.24-debug.tgz#e64e8aad629268cf6c97737e17a8592c9c2e3bb7"
+  integrity sha512-Ox9REC9WaJ/Z4+cS0QXcMz3To3RlkQO4aV2W5ETQsxf022suKfkHxGcNRqDj/P3baQm2jSAUl7+/DJPT/0GNtA==
 
-"@vuu-ui/vuu-filters@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-filters/-/vuu-filters-0.6.23-debug.tgz#fd17363a35258de304e7976f52e45971a672d68f"
-  integrity sha512-zlcUaNIsYitIjLArLNro0QcUR6nHeIRO/sjtcMcmC4g0kxA9j/I0dW27OXP32zFrjBQGN4J0OLPhYgUoIDrdSw==
-  dependencies:
-    "@heswell/salt-lab" "1.0.0-alpha.2"
-    "@salt-ds/core" "1.2.0"
-    "@vuu-ui/vuu-codemirror" "0.6.23-debug"
-    "@vuu-ui/vuu-data" "0.6.23-debug"
-    "@vuu-ui/vuu-utils" "0.6.23-debug"
-
-"@vuu-ui/vuu-layout@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-layout/-/vuu-layout-0.6.23-debug.tgz#427c86909d8988117133f5b12e9d82be94ebefab"
-  integrity sha512-Oh7zM/MQ+aOLcl+GMkzQCN+hqJ5v9FPOWC7ATC+A5h8KmaHZTAKI5brUPiFLNU9QOpOxX2QylCm3GDB4e58K+A==
+"@vuu-ui/vuu-filters@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-filters/-/vuu-filters-0.6.24-debug.tgz#7a40aba60fa4b97c7963b10d061cdfd0c43ad578"
+  integrity sha512-KyqJLJuNkU+MIDBMaFITc/mNgw8Wd/+sZfqXYoyjek5ziSvHRGAPqavMGs129RdX8QTrb2DojRZx4w6dXQO6Sg==
   dependencies:
     "@heswell/salt-lab" "1.0.0-alpha.2"
     "@salt-ds/core" "1.2.0"
-    "@salt-ds/icons" "1.1.0"
-    "@vuu-ui/vuu-popups" "0.6.23-debug"
-    "@vuu-ui/vuu-utils" "0.6.23-debug"
+    "@vuu-ui/vuu-codemirror" "0.6.24-debug"
+    "@vuu-ui/vuu-data" "0.6.24-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
 
-"@vuu-ui/vuu-popups@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-popups/-/vuu-popups-0.6.23-debug.tgz#eb7e3dac334553f5e4a902fa5e04333006f23ef1"
-  integrity sha512-sv10Ab1KjjkIwxHMn3kiESxxrcjqS3Z6aXLurFlUgz3FTm6DQs3u5Q6//xZtS7E5Fg+QFrOHmo/JQ48KnhrCxQ==
+"@vuu-ui/vuu-layout@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-layout/-/vuu-layout-0.6.24-debug.tgz#c49148debf26fdcd29e49ed3e208862436269911"
+  integrity sha512-rvAeTgOzixnXvCzpsPS/P4ohnM5PL6i6jPdGKf/USczY7RshVX38LlXrYtGZRRar39OyBrb/HEPMmopVAf24hQ==
   dependencies:
     "@heswell/salt-lab" "1.0.0-alpha.2"
     "@salt-ds/core" "1.2.0"
     "@salt-ds/icons" "1.1.0"
-    "@vuu-ui/vuu-utils" "0.6.23-debug"
+    "@vuu-ui/vuu-popups" "0.6.24-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
 
-"@vuu-ui/vuu-protocol-types@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-protocol-types/-/vuu-protocol-types-0.6.23-debug.tgz#3c3b485e2d6b8c05c830a8c9025f1ffcbd272a86"
-  integrity sha512-N0213a8qpSe05IIR4cW/6t8EgGwfyokTJ2Cdlqa6djzZvjkg48pDwVM8asdJTdsFZuWncTiz8Hsj9mtdVRLqiA==
-
-"@vuu-ui/vuu-shell@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-shell/-/vuu-shell-0.6.23-debug.tgz#0d751ed0ec358693907f3d1297cc0b9ac77d42f2"
-  integrity sha512-DsI4zZZfV8WOM8ms+c8hn/TKSs7vCtAmAGv2Vbw2UYXCcDqvdTHVdtRnPvVcAdZ2neVhobTFKwig9KH9S2qBng==
+"@vuu-ui/vuu-popups@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-popups/-/vuu-popups-0.6.24-debug.tgz#f015a399639046249fcedb4589e4400b546527c2"
+  integrity sha512-xRY4HXvM0RZAJaEr/INnvoLkU82MC7UdRCS2UWx7pkD6k6GYngnNbMHdptb+FdmEmOE8c4zvNliqcs6uYY1vqg==
   dependencies:
     "@heswell/salt-lab" "1.0.0-alpha.2"
     "@salt-ds/core" "1.2.0"
     "@salt-ds/icons" "1.1.0"
-    "@vuu-ui/vuu-data" "0.6.23-debug"
-    "@vuu-ui/vuu-layout" "0.6.23-debug"
-    "@vuu-ui/vuu-utils" "0.6.23-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
 
-"@vuu-ui/vuu-table@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-table/-/vuu-table-0.6.23-debug.tgz#299fe8129e80d70696d11e8f8761101eb2a16d9e"
-  integrity sha512-LtVpcf7/iCbvEHQF/CIrtKiZ41hPgXQ0pVQEDSFftTfezEjDVEtLNq44168gkvsnrTfEO8U6ep5Rf8PDBrQOUQ==
+"@vuu-ui/vuu-protocol-types@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-protocol-types/-/vuu-protocol-types-0.6.24-debug.tgz#b3c7556a84aa16b5349bf37d817d894537f7f0d1"
+  integrity sha512-Qr7ORIAyY+i8UmpOflyH/zj8M/En4d0GmxOaTm6+d2IqsLcf8VbmL8vLxealhHrVi/qAqeteGoM8BoqvsEpK7g==
+
+"@vuu-ui/vuu-shell@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-shell/-/vuu-shell-0.6.24-debug.tgz#15e24fc50c0d85af5b37ced95e1c91cfd17da182"
+  integrity sha512-dyM89vmTByoZUTqHhsYg9UiEC6CPiWqvSKcbTJmupfk/3CxiTKwRuK0wif8LZ8IWEEdkSuriw5CSVr9Fd02F7A==
   dependencies:
     "@heswell/salt-lab" "1.0.0-alpha.2"
     "@salt-ds/core" "1.2.0"
     "@salt-ds/icons" "1.1.0"
-    "@vuu-ui/vuu-data" "0.6.23-debug"
-    "@vuu-ui/vuu-filters" "0.6.23-debug"
-    "@vuu-ui/vuu-popups" "0.6.23-debug"
-    "@vuu-ui/vuu-utils" "0.6.23-debug"
+    "@vuu-ui/vuu-data" "0.6.24-debug"
+    "@vuu-ui/vuu-layout" "0.6.24-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
 
-"@vuu-ui/vuu-theme@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-theme/-/vuu-theme-0.6.23-debug.tgz#b1317519d5fcdc10f44302eaec2831f673c7f27f"
-  integrity sha512-yeUuNcA1JFIowG9f2tisgVxcvTEPWrG0CPjqP9ycTIqz85GhkWrZQqrNima0a63NoSUIGVBgNAyh5cr9K02KDQ==
+"@vuu-ui/vuu-table-extras@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-table-extras/-/vuu-table-extras-0.6.24-debug.tgz#4e43eb4f70bdea95013c597ba684b0517bd1c13a"
+  integrity sha512-U6zBD9F3BTIxjz+qvXrIX6NQn8SPX6HCmsiEmjOGPMdXxdga3YKzzayndGnvrKKnaQWyiyvBOasZlbuzFRJNCA==
+  dependencies:
+    "@heswell/salt-lab" "1.0.0-alpha.2"
+    "@lezer/common" "1.0.2"
+    "@lezer/lr" "1.3.3"
+    "@salt-ds/core" "1.2.0"
+    "@vuu-ui/vuu-codemirror" "0.6.24-debug"
+    "@vuu-ui/vuu-data" "0.6.24-debug"
+    "@vuu-ui/vuu-layout" "0.6.24-debug"
+    "@vuu-ui/vuu-popups" "0.6.24-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
 
-"@vuu-ui/vuu-utils@0.6.23-debug":
-  version "0.6.23-debug"
-  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-utils/-/vuu-utils-0.6.23-debug.tgz#fde25b650f1b09742ec2aaba129eeb95ce1f01ad"
-  integrity sha512-DDCoVoYykeQARiacjsAp9Nz1sza638YWKVsU0tU7tDhIIH6adr7H1fTuxJ7QXfI/GHTpyARdltjA1IF0wn/p6A==
+"@vuu-ui/vuu-table@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-table/-/vuu-table-0.6.24-debug.tgz#0cec6528c5cfc8bfc6ffa7102312675c6b74c5ff"
+  integrity sha512-05KYj7ZQs8u/HoGs0KZ1v2MiC+R0dJNBKS8zMwaAfKnwPqoEu4rbo5hHagu2W5PsYKG0DrAdpkc9LTfnN9+cbA==
+  dependencies:
+    "@heswell/salt-lab" "1.0.0-alpha.2"
+    "@salt-ds/core" "1.2.0"
+    "@salt-ds/icons" "1.1.0"
+    "@vuu-ui/vuu-data" "0.6.24-debug"
+    "@vuu-ui/vuu-filters" "0.6.24-debug"
+    "@vuu-ui/vuu-popups" "0.6.24-debug"
+    "@vuu-ui/vuu-utils" "0.6.24-debug"
+
+"@vuu-ui/vuu-theme@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-theme/-/vuu-theme-0.6.24-debug.tgz#dae441da4c314fe083cb71971785e584f391f399"
+  integrity sha512-jm2P35c4ahWs+38mIfgTXZZil7VuKQfru+/v5gSi7lwsjDYGTdit/+GMwA3IoiVqc480p/VbO87oQmsoJUTbfg==
+
+"@vuu-ui/vuu-utils@0.6.24-debug":
+  version "0.6.24-debug"
+  resolved "https://registry.yarnpkg.com/@vuu-ui/vuu-utils/-/vuu-utils-0.6.24-debug.tgz#d10ed099110e75416d6c590fcd707f3c62a67682"
+  integrity sha512-Gdg2fbJrUm71Eo+n/iDYPjRUPDRlubHdQEkkwzFCuezU0zhh4pRg4WFbxnJZOHRfRLPGueykIfrnf+J4txwfAw==
 
 "@zeit/schemas@2.29.0":
   version "2.29.0"
